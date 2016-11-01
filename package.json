@@ -1,0 +1,29 @@
+{
+  "name": "follower-markov-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " node ./node_modules/nodemon/bin/nodemon.js app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximumdata/follower-markov-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximumdata/follower-markov-bot/issues"
+  },
+  "homepage": "https://github.com/maximumdata/follower-markov-bot#readme",
+  "dependencies": {
+    "markov-generator": "^1.0.8",
+    "mongoose": "^4.6.5",
+    "node-schedule": "^1.2.0",
+    "twitter": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
