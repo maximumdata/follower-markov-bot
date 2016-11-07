@@ -21,6 +21,7 @@
     "markov-generator": "^1.0.8",
     "mongoose": "^4.6.5",
     "node-schedule": "^1.2.0",
+    "this-is-probably-ok-to-say": "^1.0.100",
     "twitter": "^1.4.0"
   },
   "devDependencies": {

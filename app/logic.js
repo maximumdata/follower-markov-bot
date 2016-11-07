@@ -1,6 +1,7 @@
 const client = require('./config/twitter')
 const tweet = require('./models/tweet')
 const MarkovGen = require('markov-generator')
+const tipots = require('this-is-probably-ok-to-say');
 
 let saveTweetsFromFollowers = (cb) => {
   client.get('followers/ids', (error, followers, response) => {
@@ -53,8 +54,13 @@ let generateTweet = (cb) => {
     })
 
     let sentence = markov.makeChain()
+
     while (sentence.length > 140) {
       sentence = markov.makeChain()
+    }
+
+    while(!tipots(sentence)) {
+        sentence = markov.makeChain()
     }
 
     cb(sentence)
